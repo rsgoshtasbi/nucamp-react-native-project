@@ -1,0 +1,46 @@
+{
+  "name": "laidoff",
+  "version": "1.5.0",
+  "description": "NuCamp RN Project",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsgoshtasbi/nucamp-react-native-project.git"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "0.1.6",
+    "@react-navigation/bottom-tabs": "^5.0.6",
+    "@react-navigation/compat": "^5.0.0",
+    "@react-navigation/drawer": "5.0.0",
+    "@react-navigation/native": "5.0.0",
+    "@react-navigation/stack": "5.0.0",
+    "@use-expo/font": "^2.0.0",
+    "expo": "^37.0.0",
+    "expo-asset": "~8.1.5",
+    "expo-font": "~8.1.0",
+    "galio-framework": "^0.6.3",
+    "prop-types": "^15.7.2",
+    "react": "16.9.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
+    "react-native-elements": "^2.2.1",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-modal-dropdown": "^0.7.0",
+    "react-native-reanimated": "~1.7.0",
+    "react-native-safe-area-context": "0.7.3",
+    "react-native-screens": "~2.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.9.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^8.2.1"
+  }
+}

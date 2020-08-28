@@ -37,16 +37,20 @@ class Home extends React.Component {
       showModal: false,
       reactSkill: false,
       reactNativeSkill: false,
-      PEOPLE: this.props.people,
+      PEOPLE: this.props.people.people,
     };
   }
 
   applyFilters() {
-    this.state.PEOPLE = this.props.people.people.filter((person) => {
+    let filteredPeople = this.state.PEOPLE.filter((person) => {
       return (
         person.reactSkill == this.state.reactSkill &&
         person.reactNativeSkill == this.state.reactNativeSkill
       );
+    });
+    this.setState({ PEOPLE: filteredPeople }, () => {
+      console.log("filtered", filteredPeople);
+      console.log("state", this.state.PEOPLE);
     });
   }
 
@@ -167,7 +171,6 @@ class Home extends React.Component {
             },
           }}
           bottomDivider
-          // onPress={() => navigate("CampsiteInfo", { campsiteId: item.id })}
         />
       );
     };
@@ -177,7 +180,7 @@ class Home extends React.Component {
         {/* Main Home Page List */}
         <FlatList
           style={styles.listItem}
-          data={this.state.PEOPLE.people}
+          data={this.state.PEOPLE}
           renderItem={renderPeopleList}
           keyExtractor={(item) => item.id.toString()}
         />

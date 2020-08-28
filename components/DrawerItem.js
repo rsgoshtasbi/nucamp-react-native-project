@@ -57,9 +57,9 @@ class DrawerItem extends React.Component {
         style={{ height: 60 }}
         onPress={() =>
           title == "GitHub Link"
-            ? Linking.openURL("https://github.com/").catch((err) =>
-                console.error("An error occurred", err)
-              )
+            ? Linking.openURL(
+                "https://github.com/rsgoshtasbi/nucamp-react-native-project.git"
+              ).catch((err) => console.error("An error occurred", err))
             : navigation.navigate(title)
         }
       >
